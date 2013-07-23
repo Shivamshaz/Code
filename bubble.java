@@ -36,6 +36,4 @@ public class bubble {
 		}
 }
 
-//order of n^2 because of two loops for comparisons
-//O(n^2);
-//in case of nearly sorted data iis O(n);
+
