@@ -1,9 +1,8 @@
-package Code;
 import java.math.BigInteger;
 import java.util.Scanner;
-public class sfact {
+public class small_factorial {
 	private static Scanner scanner;
-	public static void main(String c[]) throws Exception {
+	public static void main(String c[]) throws IOException {
 		 System.out.println("Enter the value of n: ");
 		 scanner = new Scanner(System.in);
 	   	 int n = scanner.nextInt();
