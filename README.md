@@ -1,6 +1,4 @@
-Code
-====
+CodeChef Problems
+=================
 
-Code chef
-
-Some Solutions to Code Chef very easy problems !! 
+This repository contains solutions of some codechef problems. Mostly they are implemented in java. 
