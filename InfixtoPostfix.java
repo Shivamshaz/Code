@@ -1,9 +1,8 @@
-package sorting;
 import java.io.IOException;
 import java.util.Scanner;
 class InfixtoPostfix {
-	static int top= -1 ;
-	static char [] a = new char [50];
+	static int top= -1 ; // top variable to get the pointer of the array
+	static char [] a = new char [50]; //array implementation of stack !!
 	private static Scanner scanner;
 	public static void main(String x []) throws IOException
 	{
@@ -13,7 +12,7 @@ class InfixtoPostfix {
 		for(int i=0;i<n;i++)
 		{
 			String text = scanner.next();
-			String postfix = "";
+			String postfix = ""; //output String.
 			int len = text.length();
 			for(int j=0;j<len;j++)
 			{
@@ -26,7 +25,7 @@ class InfixtoPostfix {
 					}
 					else 
 					{
-					if ( obj.set(ch) < obj.set(a[top]))
+					if ( obj.get(ch) < obj.get(a[top]))
 					{
 						while(top != -1){
 						char ch1 = obj.pop();
@@ -66,8 +65,9 @@ class InfixtoPostfix {
 		return element;
 	}
 	
-	public int set(char operator)
-    {
+	//function to get the values of operator precedences.
+	public int get(char operator)
+    	{
     	if(operator == '/')
     	{
     		return 4;
